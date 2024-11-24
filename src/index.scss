@@ -1,0 +1,32 @@
+@use "./common" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+html,
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+}
+.tickers {
+  &_container {
+    display: flex;
+    align-items: center;
+  }
+}
+.ticker {
+  padding: 16px;
+  .ticker_down {
+    color: #ff3700;
+  }
+  .ticker_up {
+    color: rgb(64, 225, 55);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(20, 21, 22);
+    color: white;
+  }
+}
+@media (prefers-color-scheme: light) {
+}
